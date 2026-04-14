@@ -8,3 +8,17 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll('.tarjeta').forEach(el => observer.observe(el));
+
+// Auto play/pause on hover
+const cards = document.querySelectorAll('.group');
+
+cards.forEach(card => {
+  const video = card.querySelector('video');
+  if (!video) return;
+
+  card.addEventListener('mouseenter', () => video.play());
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0; // reset to start
+  });
+});
