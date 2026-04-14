@@ -35,3 +35,18 @@ function toggleMenu() {
         menu.classList.add('hidden');
     }
 }
+
+
+//animacion dropdown menu
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const isOpen = menu.classList.contains('max-h-40');
+
+    if (isOpen) {
+      menu.classList.remove('max-h-40', 'opacity-100', 'translate-y-0');
+      menu.classList.add('max-h-0', 'opacity-0', '-translate-y-2');
+    } else {
+      menu.classList.remove('max-h-0', 'opacity-0', '-translate-y-2');
+      menu.classList.add('max-h-40', 'opacity-100', 'translate-y-0');
+    }
+  }
