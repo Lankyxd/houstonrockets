@@ -48,12 +48,17 @@
     <svg class="bg-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v100-79.4a1892 1892 0 0 1 500 0l500 66.7V0H0Z" fill="#D9222E"></path></svg>
 
     <section class="bg-black text-white text-center p-5">
-        <h1 class="text-3xl font-bold mb-4">JUGADORES</h1>
+    <h1 class="text-3xl font-bold mb-4">JUGADORES</h1>
 
-        <div id="players" class="grid grid-cols-1 md:grid-cols-5 gap-4">
+    <div id="players" class="grid grid-cols-1 md:grid-cols-5 gap-4">
 
-            <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
-            style="opacity:0;   transform:translateY(30px);  transition: all 0.6s ease;">
+        <!-- Kevin Durant -->
+        <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer"
+            style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+            <video src="VID/kd.mp4" muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></video>
+            <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+            <div class="relative z-20">
                 <img src="img/kd.png" alt="Kevin Durant" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
                 <h1 class="text-white font-bold text-lg">Kevin Durant</h1>
                 <h2 class="text-red-500 text-sm mb-3">Forward</h2>
@@ -63,9 +68,15 @@
                     <div><p class="text-2xl font-bold text-white">4.5</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
+        </div>
 
-            <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
-            style="opacity:0;   transform:translateY(30px);  transition: all 0.6s ease;">
+        <!-- Alperen Sengun -->
+        <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer"
+            style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+            <video src="VID/sengun.mp4" muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></video>
+            <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+            <div class="relative z-20">
                 <img src="img/sengun.png" alt="Alperen Sengun" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
                 <h1 class="text-white font-bold text-lg">Alperen Sengun</h1>
                 <h2 class="text-red-500 text-sm mb-3">Center</h2>
@@ -75,10 +86,15 @@
                     <div><p class="text-2xl font-bold text-white">6.1</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
+        </div>
 
-            
-            <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
-            style="opacity:0; transform:translateY(30px);transition: all 0.6s ease;">
+        <!-- Amen Thompson -->
+        <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer"
+            style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+            <video src="VID/amen.mp4" muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></video>
+            <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+            <div class="relative z-20">
                 <img src="img/amen.png" alt="Amen Thompson" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
                 <h1 class="text-white font-bold text-lg">Amen Thompson</h1>
                 <h2 class="text-red-500 text-sm mb-3">Guard</h2>
@@ -88,36 +104,15 @@
                     <div><p class="text-2xl font-bold text-white">5.3</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
-            <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer" 
-    style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
-
-    <!-- Video overlay on hover -->
-    <video
-        src="VID/amen.mp4"
-        muted
-        loop
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-    ></video>
-
-    <!-- Dark overlay so text stays readable -->
-    <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-
-    <!-- Card content -->
-    <div class="relative z-20">
-        <img src="img/amen.png" alt="Amen Thompson" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
-        <h1 class="text-white font-bold text-lg">Amen Thompson</h1>
-        <h2 class="text-red-500 text-sm mb-3">Guard</h2>
-        <div class="grid grid-cols-3">
-            <div><p class="text-2xl font-bold text-white">18.3</p><p class="text-xs text-gray-400">PPG</p></div>
-            <div><p class="text-2xl font-bold text-white">7.6</p><p class="text-xs text-gray-400">RPG</p></div>
-            <div><p class="text-2xl font-bold text-white">5.3</p><p class="text-xs text-gray-400">APG</p></div>
         </div>
-    </div>
-</div>
 
-            <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
+        <!-- Jabari Smith Jr. -->
+        <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer"
             style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+            <video src="VID/bari.mp4" muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></video>
+            <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+            <div class="relative z-20">
                 <img src="img/bari.png" alt="Jabari Smith Jr." class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
                 <h1 class="text-white font-bold text-lg">Jabari Smith Jr.</h1>
                 <h2 class="text-red-500 text-sm mb-3">Forward</h2>
@@ -127,9 +122,15 @@
                     <div><p class="text-2xl font-bold text-white">1.8</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
+        </div>
 
-            <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
+        <!-- Josh Okogie -->
+        <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer"
             style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+            <video src="VID/josh.mp4" muted loop playsinline
+                class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></video>
+            <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+            <div class="relative z-20">
                 <img src="img/josh.png" alt="Josh Okogie" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
                 <h1 class="text-white font-bold text-lg">Josh Okogie</h1>
                 <h2 class="text-red-500 text-sm mb-3">Guard</h2>
@@ -139,9 +140,10 @@
                     <div><p class="text-2xl font-bold text-white">1.6</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
-
         </div>
-    </section>
+
+    </div>
+</section>
 
     <footer class="bg-white">
         <div>
