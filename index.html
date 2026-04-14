@@ -9,16 +9,27 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body  class="bg-black p-3" style="font-family: 'Bebas Neue', sans-serif;">
+<body  class="bg-black p-2" style="font-family: 'Bebas Neue', sans-serif;">
 
-    <section class="bg-black">
-        <div class="flex items-center justify-center">
-            <img src="img/logo.png" alt="Houston Rockets Logo" class="h-15 lg:h-12">
-            <h1 class="text-[#D9222E] text-center p-5 text-4xl font-bold">HOUSTON ROCKETS</h1>
-            <a href="#cards" class="bg-white m-4 px-4 py-1 hover:bg-[#D9222E] duration-700">NOTICIAS</a>
-            <a href="#players" class="bg-white m-4 px-4 py-1 hover:bg-[#D9222E] duration-700">JUGADORES</a>
-        </div>
-    </section>
+<div class="flex items-center justify-center">
+    <img src="/img/logo.png" class="h-12 w-12">
+    <h1 class="text-[#D9222E] text-center p-4 text-4xl font-bold">HOUSTON ROCKETS</h1>
+
+    <!-- links: ocultos en mobile, visibles en desktop -->
+    <div class="hidden md:flex">
+        <a href="#cards" class="bg-white m-4 px-4 py-1">NOTICIAS</a>
+        <a href="#players" class="bg-white m-4 px-4 py-1">JUGADORES</a>
+    </div>
+
+    <!-- botón hamburguesa: visible en mobile, oculto en desktop -->
+    <button class="md:hidden text-white text-2xl" onclick="toggleMenu()">☰</button>
+</div>
+
+<!-- dropdown menu -->
+<div id="menu" class="hidden bg-black text-center transition-transform duration-300">
+    <a href="#cards" class="block py-2 text-white hover:bg-[#D9222E]">NOTICIAS</a>
+    <a href="#players" class="block py-2 text-white hover:bg-[#D9222E]">JUGADORES</a>
+</div>
 
     <section class="bg-gradient-to-t from-[#d9222e] to-black">
         <div class="text-center p-10 text-2xl">

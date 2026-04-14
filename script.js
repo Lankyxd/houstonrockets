@@ -1,3 +1,4 @@
+//scroll animation en las cards
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -11,7 +12,7 @@ document.querySelectorAll('.tarjeta').forEach(el => observer.observe(el));
 
 
 
-
+//video en las cards
 const cards = document.querySelectorAll('.tarjeta');
 
 cards.forEach(card => {
@@ -24,3 +25,13 @@ cards.forEach(card => {
     video.currentTime = 0;
   });
 });
+
+//navbar responsive
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+    }
+}
