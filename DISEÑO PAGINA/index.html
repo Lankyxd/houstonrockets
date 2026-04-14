@@ -76,13 +76,7 @@
                 </div>
             </div>
 
-            <video
-    src="your-video.mp4"
-    muted
-    loop
-    playsinline
-    class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-  ></video>
+            
             <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
             style="opacity:0; transform:translateY(30px);transition: all 0.6s ease;">
                 <img src="img/amen.png" alt="Amen Thompson" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
@@ -94,6 +88,33 @@
                     <div><p class="text-2xl font-bold text-white">5.3</p><p class="text-xs text-gray-400">APG</p></div>
                 </div>
             </div>
+            <div class="group bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103 relative overflow-hidden cursor-pointer" 
+    style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">
+
+    <!-- Video overlay on hover -->
+    <video
+        src="VID/amen.mp4"
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+    ></video>
+
+    <!-- Dark overlay so text stays readable -->
+    <div class="absolute inset-0 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+
+    <!-- Card content -->
+    <div class="relative z-20">
+        <img src="img/amen.png" alt="Amen Thompson" class="w-24 h-24 object-cover mx-auto rounded-full mb-3">
+        <h1 class="text-white font-bold text-lg">Amen Thompson</h1>
+        <h2 class="text-red-500 text-sm mb-3">Guard</h2>
+        <div class="grid grid-cols-3">
+            <div><p class="text-2xl font-bold text-white">18.3</p><p class="text-xs text-gray-400">PPG</p></div>
+            <div><p class="text-2xl font-bold text-white">7.6</p><p class="text-xs text-gray-400">RPG</p></div>
+            <div><p class="text-2xl font-bold text-white">5.3</p><p class="text-xs text-gray-400">APG</p></div>
+        </div>
+    </div>
+</div>
 
             <div class="bg-neutral-900 rounded-lg p-4 text-center tarjeta hover:scale-110 transition-transform duration-200 sm:hover:scale-103" 
             style="opacity:0; transform:translateY(30px); transition: all 0.6s ease;">

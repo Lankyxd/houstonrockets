@@ -9,8 +9,10 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.tarjeta').forEach(el => observer.observe(el));
 
-// Auto play/pause on hover
-const cards = document.querySelectorAll('.group');
+
+
+
+const cards = document.querySelectorAll('.tarjeta');
 
 cards.forEach(card => {
   const video = card.querySelector('video');
@@ -19,6 +21,6 @@ cards.forEach(card => {
   card.addEventListener('mouseenter', () => video.play());
   card.addEventListener('mouseleave', () => {
     video.pause();
-    video.currentTime = 0; // reset to start
+    video.currentTime = 0;
   });
 });
