@@ -51,15 +51,12 @@ function toggleMenu() {
     }
   }
 
-const images = [
-    'img/frame1.png','img/frame2.png','img/frame3.png','img/frame4.png',
-    'img/frame5.png','img/frame6.png','img/frame7.png','img/frame8.png',
-    'img/frame9.png','img/frame10.png','img/frame11.png','img/frame12.png',
-    'img/frame13.png','img/frame14.png','img/frame15.png','img/frame16.png',
-    'img/frame17.png','img/frame18.png','img/frame19.png','img/frame20.png',
-    'img/frame21.png','img/frame22.png','img/frame23.png','img/frame24.png',
-    'img/frame25.png','img/frame26.png','img/frame27.png','img/frame28.png'
-];
+const images = [];
+
+for (let i = 1; i <= 58; i++) {
+    const number = String(i).padStart(3, '0'); // 001, 002, 003...
+    images.push(`img/ezgif-frame-${number}.png`);
+}
 
 const imageElement = document.getElementById('video-image');
 const section = document.getElementById('scroll-section');
