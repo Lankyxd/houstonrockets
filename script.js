@@ -50,3 +50,32 @@ function toggleMenu() {
       menu.classList.add('max-h-40', 'opacity-100', 'translate-y-0');
     }
   }
+
+const images = [
+    'img/frame1.png','img/frame2.png','img/frame3.png','img/frame4.png',
+    'img/frame5.png','img/frame6.png','img/frame7.png','img/frame8.png',
+    'img/frame9.png','img/frame10.png','img/frame11.png','img/frame12.png',
+    'img/frame13.png','img/frame14.png','img/frame15.png','img/frame16.png',
+    'img/frame17.png','img/frame18.png','img/frame19.png','img/frame20.png',
+    'img/frame21.png','img/frame22.png','img/frame23.png','img/frame24.png',
+    'img/frame25.png','img/frame26.png','img/frame27.png','img/frame28.png'
+];
+
+const imageElement = document.getElementById('video-image');
+const section = document.getElementById('scroll-section');
+
+window.addEventListener('scroll', () => {
+
+    const rect = section.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Cuánto de la sección ya recorriste
+    const scrollInside = Math.min(
+        Math.max((windowHeight - rect.top) / (rect.height + windowHeight), 0),
+        1
+    );
+
+    const index = Math.floor(scrollInside * (images.length - 1));
+
+    imageElement.src = images[index];
+});
